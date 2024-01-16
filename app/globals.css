@@ -2,26 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body.dark-mode {
+  background-color: #1a202c;
+  /* Dark background color */
+  color: #cbd5e0;
+  /* Light text color */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+/* Light mode styling (default) */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
+  background-color: #f7fafc;
+  /* Light background color */
+  color: #1a202c;
+  /* Dark text color */
+}
+
+/* Container styling */
+.flex {
+  display: flex;
+  gap: 8px;
+  /* Adjust the gap between elements as needed */
+  padding: 16px;
+  /* Adjust the padding as needed */
+}
+
+/* Input styling */
+input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+}
+
+/* Selected email styling */
+.bg-blue-500 {
+  background-color: #4299e1;
+  /* Blue background color */
+  color: #ffffff;
+  /* White text color */
+  padding: 8px;
+  margin: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+/* Close icon styling */
+.bg-blue-500 span {
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+/* Dropdown styling */
+.absolute {
+  position: absolute;
+}
+
+/* Dropdown item styling */
+.p-2 {
+  padding: 8px;
+}
+
+/* Hover effect on dropdown items */
+.cursor-pointer:hover {
+  background-color: #edf2f7;
+  /* Light gray background color on hover */
+}
+
+/* Scrollable dropdown */
+.overflow-y-auto {
+  max-height: 128px;
+  /* Adjust the maximum height as needed */
+}

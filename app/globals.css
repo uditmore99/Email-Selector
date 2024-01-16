@@ -21,9 +21,7 @@ body {
 .flex {
   display: flex;
   gap: 8px;
-  /* Adjust the gap between elements as needed */
   padding: 16px;
-  /* Adjust the padding as needed */
 }
 
 /* Input styling */
@@ -66,11 +64,10 @@ input[type="text"] {
 /* Hover effect on dropdown items */
 .cursor-pointer:hover {
   background-color: rgb(255, 255, 255)
-    /* Light gray background color on hover */
 }
 
 /* Scrollable dropdown */
 .overflow-y-auto {
   max-height: 128px;
-  /* Adjust the maximum height as needed */
+
 }

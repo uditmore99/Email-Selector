@@ -74,7 +74,7 @@ const EmailSelector = () => {
         }`}
       >
         <h1
-          className={`text-3xl font-bold mb-4 ${
+          className={`text-5xl font-bold m-6 ${
             darkMode ? "text-white" : "text-gray-800"
           }`}
         >
@@ -89,7 +89,7 @@ const EmailSelector = () => {
           {selectedEmails.map((email) => (
             <div
               key={email.email}
-              className={` p-1 rounded-full ${
+              className={` p-1 rounded-full  ${
                 darkMode ? "text-white " : "text-black"
               }`}
             >
@@ -116,8 +116,8 @@ const EmailSelector = () => {
             />
             {showDropdown && (
               <div
-                className={`fixed ${
-                  darkMode ? "bg-gray-900 " : "bg-white "
+                className={`fixed  ${
+                  darkMode ? "bg-gray-900 text-white " : "bg-white text-black"
                 } mt-12 w-64 rounded-md shadow-lg ring-1 ring-black ring-opacity-5`}
               >
                 {filteredEmails.length > 4 && (

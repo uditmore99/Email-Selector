@@ -65,7 +65,7 @@ input[type="text"] {
 
 /* Hover effect on dropdown items */
 .cursor-pointer:hover {
-  background-color: rgb(26, 26, 26)
+  background-color: rgb(255, 255, 255)
     /* Light gray background color on hover */
 }
 
